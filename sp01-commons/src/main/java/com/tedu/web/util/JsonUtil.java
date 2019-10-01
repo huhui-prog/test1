@@ -71,7 +71,7 @@ JsonInclude.Include.NON_DEFAULT;
         objectMapper.enable(JsonGenerator.Feature.IGNORE_UNKNOWN);
         objectMapper.enable(JsonParser.Feature.ALLOW_UNQUOTED_FIELD_NAMES);
         objectMapper.disable(SerializationFeature.WRITE_DATES_AS_TIMESTAMPS);
-        objectMapper.setDateFormat(new SimpleDateFormat("yyyy©\MM©\dd HH:mm:ss"));
+        objectMapper.setDateFormat(new SimpleDateFormat("yyyy-MM-dd HH:mm:ss"));
         objectMapper.enable(JsonParser.Feature.ALLOW_SINGLE_QUOTES);
         objectMapper.registerModule(new ParameterNamesModule());
         objectMapper.registerModule(new Jdk8Module());
